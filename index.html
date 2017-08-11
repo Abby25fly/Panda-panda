@@ -18,12 +18,26 @@
   	</header>
     <!--Pictures -->
   	<section class="sectionPicture">
-  		<div class="divPicture">
-  			<img class="smallImg" src="img/a1.jpg" alt="">
-  			<img class="smallImg" src="img/a2.jpg" alt="">
-  			<img class="smallImg" src="img/a3.jpg" alt="">
-  			<img class="smallImg" src="img/a4.jpg" alt="">
-  		</div>
+      <center>
+      <div class="divPicture">
+        <div id="positionX">
+    			<img id="myImg1" class="smallImg" src="img/a1.jpg" alt="">
+          <span id="mySpan1" onclick="hideImg1()" class="close"></span>
+        </div>
+        <div id="positionX2">
+          <img id="myImg2" class="smallImg" src="img/a2.jpg" alt="">
+          <span id="mySpan2" onclick="hideImg2()"class="close"></span>
+        </div>
+        <div id="positionX3">
+          <img id="myImg3"class="smallImg" src="img/a3.jpg" alt="">
+          <span id="mySpan3" onclick="hideImg3()"class="close"></span>
+        </div>
+    		<div id="positionX4">
+    		  <img id="myImg4"class="smallImg" src="img/a4.jpg" alt="">
+          <span id="mySpan4" onclick="hideImg4()"class="close"></span>
+    		</div>
+      </div>
+      </center>
   	</section>
     <!--Botones -->
     <section>
@@ -31,7 +45,7 @@
         <center>
         <button type="button" onclick="visbLeft()">Origen</button>
         <button type="button" onclick="visbRight()">Extinción</button>
-        <button type="button">Restaurar Fotos</button>
+        <button type="button" onclick="showImg()">Restaurar Fotos</button>
         </center>
       </div>
     </section><br>

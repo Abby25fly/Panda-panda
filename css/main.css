@@ -31,8 +31,7 @@ li a{
 }
 
 .divPicture{
-  width: 60%;
-  margin: 0 auto;
+  width: auto;
   border-top: 30px solid #210f00;
   border-bottom: 20px solid #210f00;
 }
@@ -40,7 +39,7 @@ li a{
 .smallImg {
   border: 2px solid white;
   margin: 15px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 button {
@@ -66,4 +65,20 @@ background-color: #ea5c10;
     width: 380px;
     height: auto;
     margin: 16px;
+}
+
+#positionX, #positionX2, #positionX3,#positionX4{
+  position: relative;
+  display: inline-block;
+}
+
+.close:before {
+  content: '✕';
+  color: white;
+}
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
 }
